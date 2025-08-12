@@ -1,0 +1,7 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.com/ns#> .
+
+ex:ValidExample a dcat:Dataset ;
+dct:title "Example Valid Dataset" ;
+dct:description "This is an example of a dataset that should pass the ITB validation." .

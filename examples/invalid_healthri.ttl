@@ -1,0 +1,29 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://data.europa.eu/r5r/> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.example.com/dataset/ZLOYOJ> a dcat:Dataset ;
+    ns1:applicableLegislation <http://data.europa.eu/eli/reg/2025/327/oj> ;
+    dcterms:creator [ a foaf:Agent ;
+            dcterms:identifier "https://ror.org/05wg1m734" ;
+            foaf:homepage <https://www.xumc.nl/> ;
+            foaf:mbox <mailto:data-access-committee@xumc.nl> ;
+            foaf:name "Academic Medical Center" ] ;
+    dcterms:description "The primary aim of the PRISMA study was to investigate the potential value of risk-tailored versus traditional breast cancer screening protocols in the Netherlands. Data collection took place between 2014-2019, resulting in ∼67,000 mammograms, ∼38,000 surveys, ∼10,000 blood samples and ∼600 saliva samples." ;
+    dcterms:identifier "http://www.example.com/dataset/ZLOYOJ" ;
+    dcterms:issued "2024-07-01T11:11:11+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:modified "2024-06-04T13:36:10+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            dcterms:identifier "https://ror.org/05wg1m734" ;
+            foaf:homepage <https://www.xumc.nl/> ;
+            foaf:mbox <mailto:data-access-committee@xumc.nl> ;
+            foaf:name "Academic Medical Center" ] ;
+    dcterms:title "Questionnaire data of the Personalised RISk-based MAmmascreening Study (PRISMA)" ;
+    dcat:contactPoint [ a v:Kind ;
+            v:fn "Data Access Committee of the x UMC" ;
+            v:hasEmail <mailto:data-access-committee@xumc.nl> ] ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> .

@@ -1,0 +1,28 @@
+{
+  "name": "healthri-validator",
+  "version": "1.0.0",
+  "description": "A CLI tool to validate dataset metadata files using the European Validator service",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "validate-dataset": "./cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js",
+    "test": "node --test test/**/*.test.js",
+    "test:watch": "node --test --watch test/**/*.test.js"
+  },
+  "keywords": ["validation", "rdf", "dcat", "metadata", "healthri"],
+  "author": "HealthRI",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "commander": "^14.0.0",
+    "chalk": "^5.5.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
